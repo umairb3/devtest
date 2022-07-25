@@ -16,6 +16,8 @@
 
     <properties>
         <spring-security-test.version>4.0.4.RELEASE</spring-security-test.version>
+        <junit-jupiter.version>5.8.2</junit-jupiter.version>
+        <mockito.version>2.24.0</mockito.version>
     </properties>
 
     <dependencies>
@@ -36,6 +38,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -43,8 +50,11 @@
             <optional>true</optional>
         </dependency>
 
-        <!--Testing -->
-        <!--Junit TODO -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
